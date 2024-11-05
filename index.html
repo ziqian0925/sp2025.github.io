@@ -1,1 +1,126 @@
-mm
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio samples from "(title)"</title>
+    <style>
+        .centered {
+            text-align: center; /* Center the text horizontally */
+            margin: 0 auto; /* Center the block element if necessary */
+        }
+
+        table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px; /* Controls the space inside cells (cell padding) */
+            border: 1px solid #333;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Audio samples from "(title)"</h2>
+        <h4>Authors: Zi-Qian Yong, Shu-Min Leong, Raphaël C.-W. Phan, Sailaja Rajanala </h4>
+    </header>
+    <section>
+        <p><b>Abstract: </b>(abstract)</p>
+    </section>
+    <br>
+
+    <div>
+        <a name="bigvgan">
+            <div class="centered">
+                <h2>Hi-Fi GAN and BigVGAN</h2>
+            </div>
+        </a>
+        <hr>
+        <table>
+            <thead>
+                <th>Dataset</th>
+                <th>Audio with watermark (AudioSeal)</th>
+                <th>Audio after removing watermark (BigVGAN)</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">dev-clean</td> <!-- This cell spans 2 rows -->
+                    <td>
+                        <audio controls>
+                            <source src="bigvgan_audio/wm-20100615-0900-PLENARY-12_en_73.wav">
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls>
+                            <source src="bigvgan_audio/after-20100615-0900-PLENARY-12_en_73.wav">
+                        </audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <audio controls>
+                            <source src="bigvgan_audio/wm-20131008-0900-PLENARY-16_en_95.wav">
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls>
+                            <source src="bigvgan_audio/after-20131008-0900-PLENARY-16_en_95.wav">
+                        </audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <audio controls>
+                            <source src="bigvgan_audio/wm-20171024-0900-PLENARY-3_en_35.wav">
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls>
+                            <source src="bigvgan_audio/after-20171024-0900-PLENARY-3_en_35.wav" >
+                        </audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <audio controls>
+                            <source src="bigvgan_audio/wm-20190115-0900-PLENARY_en_174.wav">
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls>
+                            <source src="bigvgan_audio/after-20190115-0900-PLENARY_en_174.wav" >
+                        </audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <audio controls>
+                            <source src="bigvgan_audio/wm-20200115-0900-PLENARY_en_886.wav">
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls>
+                            <source src="bigvgan_audio/after-20200115-0900-PLENARY_en_886.wav" >
+                        </audio>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
+
+<!-- This is a comment 
+
+git add --all
+
+git commit -m "update"
+
+git push -u origin main
+
+-->
