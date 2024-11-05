@@ -16,7 +16,7 @@
             border-collapse: collapse;
         }
         th, td {
-            padding: 15px; /* Controls the space inside cells (cell padding) */
+            padding: 12px; /* Controls the space inside cells (cell padding) */
             border: 1px solid #333;
             text-align: center;
         }
@@ -41,7 +41,6 @@
         <hr>
         <table>
             <thead>
-                <th>Dataset</th>
                 <th>Audio with watermark (AudioSeal)</th>
                 <th>Audio after removing watermark (BigVGAN)</th>
             </thead>
@@ -107,6 +106,89 @@
                     </td>
                 </tr>
                 
+            </tbody>
+        </table>
+    </div>
+
+    <!-- <................................> -->
+    <div>
+        <a name="hifigan">
+            <div class="centered">
+                <h2>Hi-Fi GAN attack</h2>
+            </div>
+        </a>
+        <hr>
+        <table>
+            <thead>
+                <th>Audio with watermark (AudioSeal)</th>
+                <th>Audio after removing watermark (Hi-Fi GAN)</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <audio controls>
+                            <source src="hifigan_audio/wm-20090505-0900-PLENARY-7_en_4.wav">
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls>
+                            <source src="hifigan_audio/after-20090505-0900-PLENARY-7_en_4.wav">
+                        </audio>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <audio controls>
+                            <source src="hifigan_audio/wm-20090505-0900-PLENARY-10_en_186.wav">
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls>
+                            <source src="hifigan_audio/after-20090505-0900-PLENARY-10_en_186.wav">
+                        </audio>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <audio controls>
+                            <source src="hifigan_audio/wm-20130312-0900-PLENARY-14_en_308.wav">
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls>
+                            <source src="hifigan_audio/after-20130312-0900-PLENARY-14_en_308.wav">
+                        </audio>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <audio controls>
+                            <source src="hifigan_audio/wm-20170517-0900-PLENARY-4_en_66.wav">
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls>
+                            <source src="hifigan_audio/after-20170517-0900-PLENARY-4_en_66.wav">
+                        </audio>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <audio controls>
+                            <source src="hifigan_audio/wm-20171003-0900-PLENARY-4_en_316.wav">
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls>
+                            <source src="hifigan_audio/after-20171003-0900-PLENARY-4_en_316.wav">
+                        </audio>
+                    </td>
+                </tr>
+
             </tbody>
         </table>
     </div>
